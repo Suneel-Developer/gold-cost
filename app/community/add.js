@@ -1,23 +1,25 @@
-// pages/community/add.js
-import Link from "next/link";
+// pages/add.js
+import React from 'react';
+import Link from 'next/link';
 
-const AddCommunityPage = () => {
+const Add = () => {
   return (
     <div>
-      <p>Welcome to the Add Community Page!</p>
-      <p>Choose a component to navigate to:</p>
-
+      <h2>Add Component</h2>
       <ul>
         <li>
-          <Link href="/community/all">All Community Page</Link>
+          <Link href="/product">
+            Product
+          </Link>
         </li>
         <li>
-          <Link href="/community/product">Product Page</Link>
+          <Link href="/all">
+            All
+          </Link>
         </li>
-        {/* Add links to other components similarly */}
       </ul>
     </div>
   );
 };
 
-export default AddCommunityPage;
+export default Add;

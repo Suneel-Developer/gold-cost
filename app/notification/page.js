@@ -58,22 +58,7 @@ const Notification = () => {
             </div>
             <span className="">10:45 PM</span>
           </div>
-          <div className="w-full p-1 md:pl-5 flex justify-between items-center gap-5 mt-7 ">
-            <div className="flex items-center gap-3 px-2 md:px-5 border-l-2 border-[#CB7474] ">
-              <div className=" w-16 h-16 rounded-full">
-                <img
-                  src="/images/user.webp"
-                  alt="user"
-                  className=" w-full h-full"
-                />
-              </div>
-              <div>
-                <h1 className=" text-lg">You have received 4$</h1>
-                <p className="text-sm">Amin send you 4$ in your bank account. you can check.</p>
-              </div>
-            </div>
-            <span className="">10:45 PM</span>
-          </div>
+
 
         </div>
       </div>

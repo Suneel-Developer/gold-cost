@@ -45,6 +45,7 @@ const Signup = () => {
               type="email"
               name="email"
               id="email"
+              required
               placeholder="Entre your Email here..."
               className="w-full p-3 px-5 bg-input_bg text-white text-lg font-kelly-slab rounded-3xl border-2 border-white mb-3"
             />
