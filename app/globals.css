@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* google fonts links  */
+
+@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Kavoon", cursive; */
+  /* font-family: "Kelly Slab", cursive; */
+  font-family: "Roboto Slab", serif;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+input{
+  outline: none;
+  background: transparent;
+}
+
+.sidebar {
+  @apply fixed top-0 h-full w-[80%] sm:w-[40%] lg:w-[20%] bg-bg px-5 py-7 border-r border-border text-white transform transition-transform duration-300 ease-in-out;
+  z-index: 10; /* Increase the z-index value */
+}
+
+.main-content {
+  @apply flex w-[100%] m-auto lg:w-[60%] ;
+  transition: margin-left 0.3s ease-in-out;
+  z-index: 1; /* Lower the z-index value */
+}
+
+
+
+
+
+
+.profilebar {
+  @apply fixed top-0 h-full w-[20%] bg-bg border-l flex items-center flex-col  border-border text-white transform transition-transform duration-300 ease-in-out right-0;
+  z-index: 10; /* Increase the z-index value */
+}
+
+
+
+
+
