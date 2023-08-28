@@ -5,7 +5,7 @@ import React from "react";
 const Contributions = () => {
   return (
     <DashboardLayout>
-      <CreateGroup />
+      {/* <CreateGroup /> */}
       <div className="w-full bg-none  lg:bg-active_bg p-0 md:p-4 gap-10 mt-3 relative text-mobile_text lg:text-white rounded-md ">
         <h1 className="text-3xl hidden lg:flex mb-2">Contributions:</h1>
 
