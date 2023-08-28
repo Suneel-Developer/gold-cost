@@ -13,8 +13,8 @@ const Notification = ({onHandle}) => {
       
       <div className="w-full bg-white lg:bg-active_bg lg:px-10 py-5 mt-0 lg:mt-3 gap-10 text-dark_bg lg:text-white rounded-md ">
       <div className="w-[92%] m-auto top-24 p-3 absolute z-10 flex md:hidden items-center text-white justify-between rounded-3xl border-white border  bg-mobile_color">
-        <h1 className="text-lg font-medium">Current Group : <span>1</span></h1>
-        <h1 className="text-lg font-medium">Total Donations : <span>2500 $</span></h1>
+        <h1 className="text-sm font-medium">Current Group : <span>1</span></h1>
+        <h1 className="text-sm font-medium">Total Donations : <span>2500 $</span></h1>
       </div>
         <h1 className="text-2xl hidden md:flex font-bold mb-5">Notification :</h1>
         <div>

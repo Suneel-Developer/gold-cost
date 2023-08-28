@@ -33,10 +33,10 @@ const Members = () => {
     <DashboardLayout>
       <CreateGroup />
         <div className="w-[92%] top-24 p-3 absolute z-10 flex md:hidden items-center text-white justify-between rounded-3xl border-white border  bg-mobile_color">
-          <h1 className="text-lg font-medium">
+          <h1 className="text-sm font-medium">
             Current Group : <span>1</span>
           </h1>
-          <h1 className="text-lg font-medium">
+          <h1 className="text-sm font-medium">
             Total Donations : <span>2500 $</span>
           </h1>
         </div>
