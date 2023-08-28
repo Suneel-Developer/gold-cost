@@ -18,20 +18,20 @@ const Signup = () => {
     setShowReEnterPassword(!showReEnterPassword);
   };
   return (
-    <div className="w-full h-screen bg-[url('/images/mainBg.webp')] bg-no-repeat	bg-cover flex justify-center items-center">
-      <div className=" absolute right-0 top-0 ">
+    <div className="w-full h-screen md:bg-[url('/images/mainBg.webp')] bg-no-repeat bg-mobile_color	bg-cover flex justify-center items-center">
+      <div className=" absolute right-0 top-0 opacity-40 ">
         <img src="/images/bg.webp" alt="Bg" className="w-full h-screen" />
       </div>
-      <div className="z-10 border border-white rounded-[48px] bg-dark_bg w-2/5	 px-16 py-10 ">
-        <div className="flex justify-between items-center mb-5">
-          <h1 className="font-kavoon text-logocolor text-4xl font-bold">
+      <div className="z-10 md:border md:border-white rounded-[48px] md:bg-dark_bg w-[95%] lg:w-2/5	px-3 md:px-16 py-10 ">
+        <div className="block md:flex justify-between items-center mb-5">
+          <h1 className="font-kavoon text-logocolor text-4xl md:mb-0 mb-3 font-bold">
             Gold Coast
           </h1>
           <h2 className="font-kavoon text-white text-3xl font-bold">Signup</h2>
         </div>
 
         {/* signup form  */}
-        <form action="#" method="post" className="flex flex-col ">
+        <form action="#" method="post" className="flex flex-col border-2 border-white md:border-transparent md:rounded-none rounded-[48px] md:bg-transparent px-4 md:px-0 md:py-0 py-10  bg-dark_bg ">
           {/* email input  */}
 
           <div>
@@ -115,12 +115,12 @@ const Signup = () => {
           {/* signup button  */}
           <div className="flex justify-center flex-col items-center gap-4 mt-6">
             <div className="flex justify-center gap-6 items-center">
-              <p className="text-white font-kelly-slab text-lg">
+              <p className="text-white font-kelly-slab text-sm md:text-lg">
                 Already have an account?
               </p>
               <Link
                 href="/login"
-                className="text-white font-kavoon text-2xl font-bold"
+                className="text-white font-kavoon text-lg md:text-2xl font-bold"
               >
                 Sign In
               </Link>

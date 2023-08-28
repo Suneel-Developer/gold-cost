@@ -10,21 +10,21 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
   return (
-    <div className="w-full h-screen bg-[url('/images/mainBg.webp')] bg-no-repeat	bg-cover flex justify-center items-center">
-      <div className=" absolute right-0 top-0 ">
+    <div className="w-full h-screen md:bg-[url('/images/mainBg.webp')] bg-no-repeat	bg-cover bg-mobile_color flex justify-center items-center">
+      <div className=" absolute right-0 top-0 opacity-40 ">
         <img src="/images/bg.webp" alt="Bg" className="w-full h-screen" />
       </div>
       {/* form container  */}
-      <div className="z-10 border border-white rounded-[48px] bg-dark_bg w-2/5	 px-16 py-10 ">
-        <div className="flex justify-between items-center mb-5">
-          <h1 className="font-kavoon text-logocolor text-4xl font-bold">
+      <div className="z-10 md:border md:border-white rounded-[48px] md:bg-dark_bg w-[95%] lg:w-2/5	px-3 md:px-16 py-10 ">
+        <div className="block md:flex justify-between items-center mb-5">
+          <h1 className="font-kavoon text-logocolor text-4xl md:mb-0 mb-3 font-bold">
             Gold Coast
           </h1>
           <h2 className="font-kavoon text-white text-3xl font-bold">Sign In</h2>
         </div>
 
         {/* login form  */}
-        <form action="#" method="post" className="flex flex-col ">
+        <form action="#" method="post" className="flex flex-col border-2 border-white md:border-transparent md:rounded-none rounded-[48px] md:bg-transparent px-4 md:px-0 md:py-0 py-10  bg-dark_bg ">
           {/* email input  */}
           <div>
             <label

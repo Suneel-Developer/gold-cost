@@ -25,7 +25,9 @@ module.exports = {
         dark_bg: "rgba(9, 8, 8, 0.67)",
         input_bg: "#1D1B32",
         border: "#989898",
-        active_bg: "rgba(92, 85, 121, 0.30)"
+        active_bg: "rgba(92, 85, 121, 0.30)",
+        mobile_color: "#211E41",
+        grey: "#ADADAE"
       },
     },
   },

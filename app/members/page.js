@@ -1,6 +1,6 @@
 "use client";
 
-import CreateGroup from "@/components/CreateGroup/page";
+import CreateGroup from "@/components/HomeComponents/CreateGroup/page";
 import DashboardLayout from "@/components/DashboardLayout/page";
 import React, { useState } from "react";
 
@@ -32,10 +32,21 @@ const Members = () => {
   return (
     <DashboardLayout>
       <CreateGroup />
-      <div className="w-full bg-none  md:bg-active_bg p-0 md:p-4 gap-10 mt-3 relative text-mobile_text md:text-white rounded-md ">
-        <h1 className="text-2xl mb-5">Members </h1>
+        <div className="w-[92%] top-24 p-3 absolute z-10 flex md:hidden items-center text-white justify-between rounded-3xl border-white border  bg-mobile_color">
+          <h1 className="text-lg font-medium">
+            Current Group : <span>1</span>
+          </h1>
+          <h1 className="text-lg font-medium">
+            Total Donations : <span>2500 $</span>
+          </h1>
+        </div>
+      <div className="w-full bg-none  lg:bg-active_bg p-0 lg:p-4 gap-10 mt-10 md:mt-3 text-mobile_text lg:text-white rounded-md ">
+        <h1 className="text-2xl hidden md:flex  mb-5">Members </h1>
         {faqData.map((item, index) => (
-          <div key={index} className="mb-4 md:bg-active_bg border  border-active_bg rounded-lg">
+          <div
+            key={index}
+            className="mb-4 lg:bg-active_bg border  border-active_bg rounded-lg"
+          >
             <button
               className="flex justify-between w-full py-2 px-4  text-left"
               onClick={() => toggleAccordion(index)}

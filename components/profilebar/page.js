@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const ProfileBar = ({ isOpen }) => {
@@ -16,8 +17,23 @@ const ProfileBar = ({ isOpen }) => {
           alt="profile image"
           className="w-[196px] h-[196px]"
         />
+        <div className="">
+          <input type="file" className="hidden" />
+          <label for="file"></label>
+        </div>
+
         <div className=" absolute bottom-2 right-0 bg-white w-12 h-12 cursor-pointer rounded-full p-2">
-          <img src="/images/profileEdit.webp" alt="Profile edit" />
+          <input type="file" id="file" className="hidden" />
+          <label
+            for="file"
+            className="cursor-pointer flex items-center justify-center"
+          >
+            <img
+              src="/images/profileEdit.webp"
+              alt="Profile edit"
+              className="h-full w-full"
+            />
+          </label>
         </div>
       </div>
 
@@ -31,15 +47,17 @@ const ProfileBar = ({ isOpen }) => {
         <li className="w-full flex justify-between bg-light_bg text-white rounded px-4 py-3 mb-3 font-light text-lg">
           Total Donation : <span>1000 $</span>
         </li>
-
         <li className="w-full flex flex-col items-center mt-16 bg-light_bg text-white rounded px-4 py-3 mb-3 font-normal text-lg">
-          <button className="w-12 h-12 bg-bg flex justify-center items-center text-lg rounded-full">
-            <AiOutlinePlus />
-          </button>
+          <Link href="/community">
+            <button className="w-12 h-12 bg-bg flex justify-center items-center text-lg rounded-full">
+              <AiOutlinePlus />
+            </button>
+          </Link>
           <h2 className="mt-2 font-light tracking-wider	text-lg text-center ">
             Create Community
           </h2>
         </li>
+        
       </ul>
 
       <div></div>

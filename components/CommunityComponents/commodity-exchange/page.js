@@ -2,16 +2,16 @@ import React from "react";
 
 const CommodityExchangePage = () => {
   return (
-    <div className="w-full bg-active_bg p-4 relative text-white rounded-md flex flex-col">
-      <h1 className="text-2xl	font-normal	mb-2">Commodity Exchange :</h1>
+    <div className="w-full bg-none lg:bg-active_bg p-0 lg:p-4 relative text-mobile_color lg:text-white rounded-md flex flex-col">
+      <h1 className="text-2xl hidden lg:flex	font-normal	mb-2">Commodity Exchange :</h1>
 
       <form>
-        <div className="flex w-full gap-3">
+        <div className="block md:flex w-full gap-3">
           <div className="w-full md:1/2 gap-1 mb-3">
             <label htmlFor="EscrowType" className="block text-lg font-medium">
               Escrow Type*
             </label>
-            <select className="w-full border border-border bg-active_bg rounded-lg p-3 outline-none">
+            <select className="w-full border border-border bg-none lg:bg-active_bg rounded-lg p-3 outline-none">
               <option value="select">Select</option>
               <option value="select">Type 01</option>
               <option value="select">Type 01</option>
@@ -21,7 +21,7 @@ const CommodityExchangePage = () => {
             <label htmlFor="EscrowType" className="block text-lg font-medium">
               Escrow Type*
             </label>
-            <select className="w-full border border-border bg-active_bg rounded-lg p-3 outline-none">
+            <select className="w-full border border-border bg-none lg:bg-active_bg rounded-lg p-3 outline-none">
               <option value="select">Select</option>
               <option value="select">Type 01</option>
               <option value="select">Type 01</option>
@@ -29,12 +29,12 @@ const CommodityExchangePage = () => {
           </div>
         </div>
 
-        <div className="flex w-full gap-3">
+        <div className="block md:flex w-full gap-3">
           <div className="w-full md:1/2 gap-1 mb-3">
             <label htmlFor="EscrowType" className="block text-lg font-medium">
               Timeout Date and Time :
             </label>
-            <select className="w-full border border-border bg-active_bg rounded-lg p-3 outline-none">
+            <select className="w-full border border-border bg-none lg:bg-active_bg rounded-lg p-3 outline-none">
               <option value="select">Select</option>
               <option value="select">Type 01</option>
               <option value="select">Type 01</option>
@@ -44,7 +44,7 @@ const CommodityExchangePage = () => {
             <label htmlFor="EscrowType" className="block text-lg font-medium">
               Amount :
             </label>
-            <select className="w-full border border-border bg-active_bg rounded-lg p-3 outline-none">
+            <select className="w-full border border-border bg-none lg:bg-active_bg rounded-lg p-3 outline-none">
               <option value="select">Select</option>
               <option value="select">Type 01</option>
               <option value="select">Type 01</option>
@@ -59,7 +59,7 @@ const CommodityExchangePage = () => {
           <input
             type="text"
             placeholder="Enter Address"
-            className="w-full border border-border bg-active_bg rounded-lg p-3 outline-none"
+            className="w-full border border-border bg-none lg:bg-active_bg rounded-lg p-3 outline-none"
           />
         </div>
 
@@ -72,7 +72,7 @@ const CommodityExchangePage = () => {
             rows={3}
             type="text"
             placeholder="Enter Description"
-            className="w-full border border-border bg-active_bg rounded-lg p-3 outline-none resize-none"
+            className="w-full border border-border bg-none lg:bg-active_bg rounded-lg p-3 outline-none resize-none"
           />
         </div>
 
@@ -81,7 +81,7 @@ const CommodityExchangePage = () => {
           <label className="text-lg font-medium">Ship through Escrow</label>
         </div>
 
-        <button className="flex justify-center items-center m-auto border border-border bg-active_bg py-2 px-10 text-lg font-medium">Submit</button>
+        <button className="flex justify-center items-center m-auto border border-border bg-active_bg py-2 px-10 text-lg font-medium rounded-lg">Submit</button>
       </form>
     </div>
   );

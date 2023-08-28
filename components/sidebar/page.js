@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -9,7 +10,7 @@ import { HiOutlineUser, HiChartPie } from "react-icons/hi";
 import { FaUsers } from "react-icons/fa";
 import { AiOutlineSetting } from "react-icons/ai";
 
-const MyComponent  = ({ isOpen, hideSidebar }) => {
+const MyComponent = ({ isOpen, hideSidebar }) => {
   const pathname = usePathname();
   return (
     <div
@@ -35,12 +36,10 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
             <Link
               href="/dashboard"
               className={`flex items-center gap-6 rounded duration-300 ease-in-out mb-5 ${
-                pathname.includes("dashboard") && "bg-active_bg text-white"
+                pathname.includes("dashboard") && "bg-active_bg p-2 text-white"
               }`}
             >
-              <RiHomeFill className={`w-7 h-7 ${
-                pathname.includes("dashboard") && "bg-logocolor rounded-full p-2 w-10 h-10 text-sm text-center text-white"
-              }`} />
+              <RiHomeFill className="w-7 h-7" />
               <span className="text-lg pt-1 text-dark_text font-medium tracking-wide">
                 Home
               </span>
@@ -52,7 +51,7 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
             <Link
               href="/notification"
               className={`flex items-center gap-6 rounded duration-300 ease-in-out mb-5 ${
-                pathname.includes("notification") && "bg-active_bg text-white"
+                pathname.includes("notification") && "bg-active_bg p-2 text-white"
               }`}
             >
               <MdOutlineNotificationsActive className="w-7 h-7" />
@@ -67,7 +66,7 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
             <Link
               href="/profile"
               className={`flex items-center gap-6 rounded duration-300 ease-in-out mb-5 ${
-                pathname.includes("profile") && "bg-active_bg text-white"
+                pathname.includes("profile") && "bg-active_bg p-2 text-white"
               }`}
             >
               <HiOutlineUser className="w-7 h-7" />
@@ -81,7 +80,9 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
           <li>
             <Link
               href="/members"
-              className="flex items-center gap-6 rounded duration-300 ease-in-out mb-5 "
+              className={`flex items-center gap-6 rounded duration-300 ease-in-out mb-5 ${
+                pathname.includes("members") && "bg-active_bg p-2 text-white"
+              }`}
             >
               <FaUsers className="w-7 h-7" />
               <span className="text-lg pt-1 text-dark_text font-medium tracking-wide	">
@@ -94,7 +95,9 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
           <li>
             <Link
               href="/contributions"
-              className="flex items-center gap-6 rounded duration-300 ease-in-out mb-5 "
+              className={`flex items-center gap-6 rounded duration-300 ease-in-out mb-5 ${
+                pathname.includes("contributions") && "bg-active_bg p-2 text-white"
+              }`}
             >
               <HiChartPie className="w-7 h-7" />
               <span className="text-lg pt-1 text-dark_text font-medium tracking-wide	">
@@ -107,7 +110,9 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
           <li>
             <Link
               href="/community"
-              className="flex items-center gap-6 rounded duration-300 ease-in-out mb-5 "
+              className={`flex items-center gap-6 rounded duration-300 ease-in-out mb-5 ${
+                pathname.includes("community") && "bg-active_bg p-2 text-white"
+              }`}
             >
               <FaUsers className="w-7 h-7" />
               <span className="text-lg pt-1 text-dark_text font-medium tracking-wide	">
@@ -123,7 +128,9 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
             <li>
               <Link
                 href="/settings"
-                className="flex items-center gap-6 rounded duration-300 ease-in-out mb-5 "
+                className={`flex items-center gap-6 rounded duration-300 ease-in-out mb-5 ${
+                  pathname.includes("settings") && "bg-active_bg p-2 text-white"
+                }`}
               >
                 <AiOutlineSetting className="w-8 h-8" />
                 <span className="text-xl pt-1 text-dark_text font-medium tracking-wide	">
@@ -138,4 +145,4 @@ const MyComponent  = ({ isOpen, hideSidebar }) => {
   );
 };
 
-export default MyComponent ;
+export default MyComponent;
