@@ -31,7 +31,7 @@ const DashboardLayout = ({ children }) => {
         <img src="/images/bg.webp" alt="Bg" className="w-full  h-screen opacity-10" />
       </div>
       <Sidebar isOpen={isSidebarOpen} hideSidebar={hideSidebar} />
-      <div className={`relative main-content flex flex-col flex-1 overflow-y-auto z-10`}>
+      <div className={`relative main-content flex flex-col flex-1 overflow-y-auto sm:pb-0 pb-24 z-10`}>
         <Topbar toggleSidebar={toggleSidebar} />
         <div className="content p-2 md:p-7">
           {children}
