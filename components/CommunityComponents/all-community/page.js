@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import CreateGroup from "../../HomeComponents/CreateGroup/page";
+import CreateGroup from "@/components/CreateGroup/page";
 import { FaPlus, FaAngleRight } from "react-icons/fa";
 
 const AllCommunityPage = ({onHandle, showAddCommunity}) => {

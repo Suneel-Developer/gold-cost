@@ -1,11 +1,11 @@
-import CreateGroup from "@/components/HomeComponents/CreateGroup/page";
+import CreateGroup from "@/components/CreateGroup/page";
 import DashboardLayout from "@/components/DashboardLayout/page";
 import React from "react";
 
 const Contributions = () => {
   return (
     <DashboardLayout>
-      {/* <CreateGroup /> */}
+      <CreateGroup />
       <div className="w-full bg-none  lg:bg-active_bg p-0 md:p-4 gap-10 mt-3  text-mobile_text lg:text-white rounded-md ">
 
       <div className="w-[92%] m-auto top-24 p-3 absolute z-10 flex md:hidden items-center text-white justify-between rounded-3xl border-white border  bg-mobile_color">

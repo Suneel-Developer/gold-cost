@@ -39,8 +39,8 @@ const DashboardLayout = ({ children }) => {
       </div>
 
       {/* <MobileNavigation /> */}
-      <div className="bg-gray-800 sm:hidden z-10 flex justify-center items-center">
-      {/* <MobileNavigation /> */}
+      <div className="sm:hidden z-10 flex justify-center items-center">
+      <MobileNavigation />
     </div>
 
       <ProfileBar isOpen={isProfileBarOpen} hideProfileBar={hideProfileBar} />

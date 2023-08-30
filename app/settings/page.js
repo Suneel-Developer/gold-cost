@@ -1,20 +1,20 @@
 "use client";
-import CreateGroup from "@/components/HomeComponents/CreateGroup/page";
-import DashboardLayout from "@/components/DashboardLayout/page";
 import React, { useState } from "react";
+import DashboardLayout from "@/components/DashboardLayout/page";
+import CreateGroup from "@/components/CreateGroup/page";
 
 const Settings = () => {
   const faqData = [
     {
-      question: "Profile",
+      title: "Profile",
       answer: "09 : 37 PM",
     },
     {
-      question: "Members",
+      title: "Members",
       answer: "09 : 37 PM",
     },
     {
-      question: "Preferences :",
+      title: "Preferences :",
       answer: "09 : 37 PM",
     },
   ];
@@ -50,7 +50,7 @@ const Settings = () => {
               className="flex justify-between w-full py-2 px-4  text-left"
               onClick={() => toggleAccordion(index)}
             >
-              <span className="text-xl font-semibold">{item.question}</span>
+              <span className="text-xl font-semibold">{item.title}</span>
               <span className="ml-2">{activeIndex === index ? "▲" : "▼"}</span>
             </button>
             {activeIndex === index && (
