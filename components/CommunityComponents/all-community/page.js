@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import CreateGroup from "@/components/CreateGroup/page";
 import { FaPlus, FaAngleRight } from "react-icons/fa";
 

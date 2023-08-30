@@ -1,10 +1,8 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const CreateGroup = () => {
-
-
   
   return (
     <div className="hidden lg:w-full  bg-active_bg p-4 gap-10 text-white rounded-xl lg:flex ">

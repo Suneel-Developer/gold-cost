@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 
 const LetsStartPage = () => {
   return (

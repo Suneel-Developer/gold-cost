@@ -1,8 +1,7 @@
 "use client"
-import { useState } from 'react';
+import React from 'react';
 
 const DonationPopup = ({ onClose }) => {
-  const [donationSuccess, setDonationSuccess] = useState(false);
 
   const handleNext = () => {
     onClose();

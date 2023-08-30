@@ -1,7 +1,7 @@
 "use client";
+import React, { useState } from "react";
 import CreateGroup from "@/components/CreateGroup/page";
 import DashboardLayout from "@/components/DashboardLayout/page";
-import React, { useState } from "react";
 
 const Members = () => {
   const faqData = [

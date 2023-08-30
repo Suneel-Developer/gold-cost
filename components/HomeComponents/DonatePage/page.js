@@ -1,7 +1,7 @@
 "use client"
-import DonationPopup from "@/components/HomeComponents/DonatePopup";
-import Link from "next/link";
 import React, {useState} from "react";
+import Link from "next/link";
+import DonationPopup from "@/components/HomeComponents/DonatePopup";
 
 const Donate = () => {
   const [showPopup, setShowPopup] = useState(false);

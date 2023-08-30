@@ -1,7 +1,7 @@
+import React from "react";
+import Link from "next/link";
 import MobileProfile from "@/components/MobileProfile/page";
 import Slider from "@/components/Slider/page";
-import Link from "next/link";
-import React from "react";
 import { BiSolidChevronRight } from "react-icons/bi";
 
 const Main = ({onHandle}) => {

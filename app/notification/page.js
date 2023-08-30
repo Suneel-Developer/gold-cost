@@ -1,12 +1,8 @@
+import React from "react";
 import CreateGroup from "@/components/CreateGroup/page";
 import DashboardLayout from "@/components/DashboardLayout/page";
-import React from "react";
 
-const Notification = ({onHandle}) => {
-
-  const handleChange=()=> {
-    onHandle()
-  }
+const Notification = () => {
 
   return (
     <DashboardLayout>

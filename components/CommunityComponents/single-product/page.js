@@ -9,6 +9,7 @@ const SingleProductPage = ({ showChat, showExchangeCommodity }) => {
   const handleshowExchangeCommodity = () => {
     showExchangeCommodity();
   };
+  
   return (
     <div className="w-full bg-none lg:bg-active_bg p-0 md:p-4 text-[#3D3D3D] lg:text-white rounded-md flex flex-col">
       <div
