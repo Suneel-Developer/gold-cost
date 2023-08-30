@@ -26,8 +26,8 @@ input{
 }
 
 .sidebar {
-  @apply fixed top-0 h-full w-[80%] sm:w-[40%] lg:w-[20%] bg-bg px-5 py-7 border-r border-border text-white transform transition-transform duration-300 ease-in-out;
-  z-index: 10; /* Increase the z-index value */
+  @apply fixed z-50 top-0 h-full w-[80%] sm:w-[40%] lg:w-[20%] bg-bg px-5 py-7 border-r border-border text-white transform transition-transform duration-300 ease-in-out;
+  z-index: 50; /* Increase the z-index value */
 }
 
 .main-content {
@@ -35,9 +35,6 @@ input{
   transition: margin-left 0.3s ease-in-out;
   z-index: 1; /* Lower the z-index value */
 }
-
-
-
 
 
 .profilebar {
