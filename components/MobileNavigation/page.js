@@ -19,7 +19,7 @@ const MobileNavigation = () => {
 
 
   return (
-    <div className=' bg-mobile_color  max-h-[70px] w-full fixed bottom-0 left-0 right-0 z-10 '>
+    <div className=' bg-mobile_color  max-h-[70px] w-full absolute bottom-0 left-0 right-0 z-10 '>
       <ul className=' flex justify-around relative  '>
 
         {
