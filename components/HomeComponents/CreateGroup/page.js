@@ -6,6 +6,8 @@ const CreateGroup = ({onHandle}) => {
   const handleChange=()=> {
     onHandle()
   }
+
+  
   return (
     <div className="hidden lg:w-full  bg-active_bg p-4 gap-10 text-white rounded-xl lg:flex ">
       <div className="flex flex-col  w-[70%]">

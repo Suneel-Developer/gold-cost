@@ -1,6 +1,6 @@
-import Link from "next/link";
 import React from "react";
 import { BsChatRightTextFill } from "react-icons/bs";
+import { FaAngleRight } from "react-icons/fa";
 
 const SingleProductPage = ({ showChat, showExchangeCommodity }) => {
   const handelChat = () => {
@@ -10,7 +10,15 @@ const SingleProductPage = ({ showChat, showExchangeCommodity }) => {
     showExchangeCommodity();
   };
   return (
-    <div className="w-full bg-none lg:bg-active_bg p-0 md:p-4 relative text-[#3D3D3D] lg:text-white rounded-md flex flex-col">
+    <div className="w-full bg-none lg:bg-active_bg p-0 md:p-4 text-[#3D3D3D] lg:text-white rounded-md flex flex-col">
+      <div
+        className="w-[95%] m-auto top-24 p-3 px-5 absolute z-10 flex md:hidden items-center text-white justify-center gap-7 rounded-3xl border-white border  bg-mobile_color"
+        onClick={handleshowExchangeCommodity}
+      >
+        <h2>Exchange Commodity</h2>
+        <FaAngleRight className="text-lg font-bold" />
+      </div>
+
       <div className="hidden md:flex items-center gap-4 ">
         <h1 className="text-2xl font-medium mb-3">Food Community :</h1>
         <p className="text-base font-medium">
@@ -18,7 +26,7 @@ const SingleProductPage = ({ showChat, showExchangeCommodity }) => {
         </p>
       </div>
 
-      <div className="flex items-center justify-between pl-0 md:pl-2 border-l-0 md:border-l-2 md:border-[#CB7474]">
+      <div className="flex items-center justify-between pl-0 md:pl-2 border-l-0 mt-7 md:mt-0 md:border-l-2 md:border-[#CB7474]">
         <div className="flex items-center gap-4">
           <img
             src="/images/notification.png"
@@ -31,7 +39,10 @@ const SingleProductPage = ({ showChat, showExchangeCommodity }) => {
           </div>
         </div>
         <div className="flex items-center gap-10">
-          <BsChatRightTextFill className="text-xl cursor-pointer" onClick={handelChat} />
+          <BsChatRightTextFill
+            className="text-xl cursor-pointer"
+            onClick={handelChat}
+          />
           <button
             onClick={handleshowExchangeCommodity}
             className="border border-white bg-active_bg hidden md:block rounded-lg px-6 py-2 text-lg"

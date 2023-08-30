@@ -15,7 +15,7 @@ const Login = () => {
         <img src="/images/bg.webp" alt="Bg" className="w-full h-screen" />
       </div>
       {/* form container  */}
-      <div className="z-10 md:border md:border-white rounded-[48px] md:bg-dark_bg w-[95%] lg:w-2/5	px-3 md:px-16 py-10 ">
+      <div className="z-10 md:border md:border-white rounded-[48px] md:bg-dark_bg w-[95%] lg:w-2/5	px-0 md:px-16 py-10 ">
         <div className="block md:flex justify-between items-center mb-5">
           <h1 className="font-kavoon text-logocolor text-4xl md:mb-0 mb-3 font-bold">
             Gold Coast

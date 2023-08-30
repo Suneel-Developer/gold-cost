@@ -58,11 +58,12 @@ const Dashboard = () => {
   return (
     <DashboardLayout>
       <CreateGroup onHandle={handleEidtMode} />
+      
       {!createMode &&
         !showListGroup &&
         !showMemberGroup &&
         !showCustomDonation &&
-        !showDonation && <Main />}
+        !showDonation && <Main onHandle={handleEidtMode} />}
       {createMode && <Groups onHandle={handleToggleListGroup} />}
       {showListGroup && <LeastGroup onHandle={handleshowMemberGroup} />}
       {showMemberGroup && (

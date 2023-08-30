@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-
 import Sidebar from "../sidebar/page";
 import Topbar from "../Header/page";
 import ProfileBar from "../profilebar/page";
@@ -34,11 +33,16 @@ const DashboardLayout = ({ children }) => {
       <Sidebar isOpen={isSidebarOpen} hideSidebar={hideSidebar} />
       <div className={`relative main-content flex flex-col flex-1 overflow-y-auto z-10`}>
         <Topbar toggleSidebar={toggleSidebar} />
-        <div className="content p-3 md:p-7">
+        <div className="content p-2 md:p-7">
           {children}
         </div>
       </div>
+
       {/* <MobileNavigation /> */}
+      <div className="bg-gray-800 sm:hidden z-10 flex justify-center items-center">
+      {/* <MobileNavigation /> */}
+    </div>
+
       <ProfileBar isOpen={isProfileBarOpen} hideProfileBar={hideProfileBar} />
     </div>
   );

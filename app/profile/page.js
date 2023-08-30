@@ -5,7 +5,7 @@ import { BiPlusMedical } from "react-icons/bi";
 const Profile = () => {
   return (
     <DashboardLayout>
-      <div className="w-full bg-none  lg:bg-active_bg p-4 gap-10 mt-16 relative border border-border lg:border-0 text-mobile_text lg:text-white rounded-xl">
+      <div className="w-full bg-none  lg:bg-active_bg p-2 md:p-4 gap-10 mt-16 relative border border-border lg:border-0 text-mobile_text lg:text-white rounded-xl">
         <div className="absolute right-10 -top-14  bg-[#D9D9D9] border-border border-4 rounded-full flex justify-center text-center items-center w-28 h-28">
           <input type="file" id="file" className="hidden" />
           <label
@@ -16,10 +16,10 @@ const Profile = () => {
             Upload Image
           </label>
         </div>
-        <h1 className="mb-3 hidden md:flex text-xl ">Profile:</h1>
+        <h1 className="mb-3 hidden md:flex text-4xl font-medium ">Profile:</h1>
         <div className="block md:flex gap-5 mb-5 mt-10 md:mt-0  ">
           <div className="w-full md:w-[50%]">
-            <label className="block mb-1 text-lg">Full Name:</label>
+            <label className="block mb-1 text-lg font-medium">Full Name:</label>
             <input
               type="text"
               placeholder="Ener full name"

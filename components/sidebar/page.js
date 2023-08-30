@@ -7,7 +7,7 @@ import { BiSolidChevronsLeft } from "react-icons/bi";
 import { RiHomeFill } from "react-icons/ri";
 import { MdOutlineNotificationsActive } from "react-icons/md";
 import { HiOutlineUser, HiChartPie } from "react-icons/hi";
-import { FaUsers } from "react-icons/fa";
+import { FaUsers,FaUsersCog  } from "react-icons/fa";
 import { AiOutlineSetting } from "react-icons/ai";
 
 const MyComponent = ({ isOpen, hideSidebar }) => {
@@ -114,7 +114,7 @@ const MyComponent = ({ isOpen, hideSidebar }) => {
                 pathname.includes("community") && "bg-active_bg p-2 text-white"
               }`}
             >
-              <FaUsers className="w-7 h-7" />
+              <FaUsersCog className="w-7 h-7" />
               <span className="text-lg pt-1 text-dark_text font-medium tracking-wide	">
                 Community
               </span>

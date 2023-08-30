@@ -22,7 +22,7 @@ const Signup = () => {
       <div className=" absolute right-0 top-0 opacity-40 ">
         <img src="/images/bg.webp" alt="Bg" className="w-full h-screen" />
       </div>
-      <div className="z-10 md:border md:border-white rounded-[48px] md:bg-dark_bg w-[95%] lg:w-2/5	px-3 md:px-16 py-10 ">
+      <div className="z-10 md:border md:border-white rounded-[48px] md:bg-dark_bg w-[95%] lg:w-2/5	px-0 md:px-16 py-10 ">
         <div className="block md:flex justify-between items-center mb-5">
           <h1 className="font-kavoon text-logocolor text-4xl md:mb-0 mb-3 font-bold">
             Gold Coast
@@ -113,7 +113,7 @@ const Signup = () => {
           </div>
 
           {/* signup button  */}
-          <div className="flex justify-center flex-col items-center gap-4 mt-6">
+          <div className="flex justify-center flex-col items-center gap-4 mt-1 md:mt-6">
             <div className="flex justify-center gap-6 items-center">
               <p className="text-white font-kelly-slab text-sm md:text-lg">
                 Already have an account?

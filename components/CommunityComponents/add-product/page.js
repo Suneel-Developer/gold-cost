@@ -1,9 +1,23 @@
 import React from "react";
 import {PiDownloadSimple} from "react-icons/pi"
+import { FaPlus, FaAngleRight } from "react-icons/fa";
 
-const AddProduct = () => {
+
+const AddProduct = ({showAddCommunity}) => {
+
+  const handleshowAddCommunity = ()=>{
+    showAddCommunity()
+  }
   return (
-    <div className="w-full bg-none lg:bg-active_bg p-0 lg:p-4 mt-3 relative text-mobile_color lg:text-white rounded-md flex flex-col ">
+    <div className="w-full bg-none lg:bg-active_bg p-0 lg:p-4 mt-3  text-mobile_color lg:text-white rounded-md flex flex-col ">
+      <div className="w-[95%] m-auto top-24 p-3 px-5 absolute z-10 flex md:hidden items-center text-white justify-between rounded-3xl border-white border  bg-mobile_color" onClick={handleshowAddCommunity}>
+        <div className="flex items-center gap-4">
+          <FaPlus className="text-lg font-bold"  />
+          <h2>Add a community</h2>
+        </div>
+        <FaAngleRight className="text-lg font-bold" />
+      </div>
+      
       <div className="hidden md:flex items-center gap-4">
         <h1 className="text-2xl font-medium mb-3">Food Community :</h1>
         <p className="text-base font-medium">
@@ -12,7 +26,7 @@ const AddProduct = () => {
       </div>
       <form method="post" className="flex flex-col gap-2">
 
-      <div className="w-[150px] m-auto text-border block md:hidden bg-[#F4F4F4]  rounded-md">
+      <div className="w-[150px] m-auto text-border block md:hidden bg-[#F4F4F4] mt-7 md:mt-0  rounded-md">
           <input type="file" id="file" className="hidden" />
           <label
             for="file"

@@ -40,7 +40,6 @@ input{
 
 
 
-
 .profilebar {
   @apply fixed top-0 h-full w-[20%] bg-bg border-l flex items-center flex-col  border-border text-white transform transition-transform duration-300 ease-in-out right-0;
   z-index: 10; /* Increase the z-index value */

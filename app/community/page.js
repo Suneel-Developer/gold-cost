@@ -23,8 +23,8 @@ const Community = () => {
 
 
   const handleshowAllCommunity = () => {
-    setCreateMode(true);
     setShowallCommunity(true);
+    setCreateMode(false);
     setShowProducts(false)
     setShowSingleProduct(false)
     setShowExchangeCommodity(false)
@@ -88,17 +88,30 @@ const Community = () => {
     setShowallCommunity(false);
   }
 
+  const handleshowAddCommunity = ()=>{
+    setCreateMode(true);
+    setShowExchangeCommodity(false)
+    setShowSingleProduct(false)
+    setShowAddProduct(false)
+    setShowChatPage(false)
+    setShowSeeAllProducts(false)
+    setShowProducts(false)
+    setCreateMode(false);
+    setShowallCommunity(false);
+  }
+
   
 
 
   return (
     <DashboardLayout>
       {!createMode && !showallCommunity && !showProducts && !showSeeAllProducts && !showChatPage && !showAddProduct && !showSingleProduct && !showExchangeCommodity && <AddCommunity  onHandle={handleshowAllCommunity} />}
-      {showallCommunity && <AllCommunityPage onHandle={handleshowProduct} />}
+      {showallCommunity && <AllCommunityPage onHandle={handleshowProduct} showAddCommunity={handleshowAddCommunity} />}
+      {createMode && <AddCommunity onHandle={handleshowProduct} />}
       {showProducts &&  <ProductPage handleSeeAll={handleshowSeeAllProduct} showChat={handleshowChat} showAddProduct={handleshowAddProduct} />}
-      {showSeeAllProducts && <ProductsPage showChat={handleshowChat} showSingleProduct={handleSingleProduct} />}
-      {showChatPage && <ChatPage   />}
-      {showAddProduct && <AddProduct />}
+      {showSeeAllProducts && <ProductsPage showChat={handleshowChat} showSingleProduct={handleSingleProduct} showAddProduct={handleshowAddProduct} />}
+      {showChatPage && <ChatPage showExchangeCommodity={handleExchangeCommodity}  />}
+      {showAddProduct && <AddProduct showAddCommunity={handleshowAddCommunity} />}
       {showSingleProduct && <SingleProductPage showChat={handleshowChat} showExchangeCommodity={handleExchangeCommodity} />}
       {showExchangeCommodity && <CommodityExchangePage  />}
 

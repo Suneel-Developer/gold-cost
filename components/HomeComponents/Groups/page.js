@@ -5,8 +5,16 @@ const Groups = ({ onHandle }) => {
     onHandle();
   };
   return (
-    <div className="w-full bg-none lg:bg-active_bg p-0 lg:p-4 relative text-mobile_color  lg:text-white rounded-lg  mt-2">
-      <p className="lg:hidden max-w-[90%] m-auto text-center font-normal flex text-lg text-[#373737]">
+    <div className="w-full bg-none lg:bg-active_bg p-0 lg:p-4  text-mobile_color  lg:text-white rounded-lg  mt-2">
+      <div className="w-[92%] m-auto top-24 p-3 absolute z-10 flex md:hidden items-center text-white justify-between rounded-3xl border-white border  bg-mobile_color">
+        <h1 className="text-sm font-medium">
+          Current Group : <span>1</span>
+        </h1>
+        <h1 className="text-sm font-medium">
+          Total Donations : <span>2500 $</span>
+        </h1>
+      </div>
+      <p className="lg:hidden max-w-[90%] m-auto text-center font-normal mt-7  flex text-lg text-[#373737]">
         If you Donate some Amount, you will be moved to another Group
       </p>
       <h1 className="text-3xl font-normal hidden lg:flex mb-2">

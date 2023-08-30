@@ -14,17 +14,32 @@ const Donate = () => {
     setShowPopup(false);
   };
   return (
-    <div className="bg-mobile_color lg:bg-active_bg p-4 rounded-lg mt-2 text-white relative ">
+    <div className="w-full">
+      <div className="w-[95%] m-auto top-16 p-3 absolute z-10 flex md:hidden text-white flex-col rounded-3xl border-white border  bg-mobile_color">
+        <div className="w-full flex justify-between items-center gap-1">
+          <h1 className="text-sm font-medium">
+            Current Group : <span>1</span>
+          </h1>
+          <h1 className="text-sm font-medium">
+            Next Payout : 1 $ <span className="text-xs">(weekly)</span>
+          </h1>
+        </div>
+        <h1 className="text-sm font-medium py-3">Limit : 1 $</h1>
+        <p className="text-[10px]  text-center">
+          If you donate 0 to 1$ you will be member of this group.
+        </p>
+      </div>
+    <div className="bg-none lg:bg-active_bg p-0 md:p-4 rounded-lg mt-12 md:mt-2 text-mobile_color lg:text-white relative ">
       <h1 className="text-3xl font-normal">Donation :</h1>
 
-      <form className="mt-3 bg-mobile_color lg:bg-active_bg p-4 rounded-lg text-white">
+      <form className="mt-3 bg-none lg:bg-active_bg p-0 md:p-4 rounded-lg">
         <div>
           <label className="block text-lg font-semibold tracking-wide pb-1">Donor Name :</label>
           <div className=" flex gap-5 items-center">
             <input
               type="text"
               placeholder="Richard"
-              className="bg-active_bg rounded-lg p-2 text-lg w-full lg::w-[70%]"
+              className="bg-none lg:bg-active_bg rounded-lg p-2 text-lg w-full lg::w-[70%] border border-border lg:border-0"
             />
             <Link
               href="#"
@@ -42,11 +57,11 @@ const Donate = () => {
           <input
             type="text"
             placeholder="100 USD"
-            className="bg-active_bg rounded-lg p-2 text-lg w-full lg:w-[76%]"
+            className="bg-none lg:bg-active_bg rounded-lg p-2 text-lg w-full lg:w-[76%] border border-border lg:border-0"
           />
         </div>
 
-        <h1 className="text-lg my-3">Pay Through :</h1>
+        <h1 className="text-lg my-3 font-bold">Pay Through :</h1>
         <div className="w-full lg:w-[50%] m-auto">
           <div className="flex gap-8 md:gap-12 items-center">
             <div className="flex items-center gap-2 md:gap-4 mt-3">
@@ -111,9 +126,11 @@ const Donate = () => {
       </form>
 
       <div className="md:hidden justify-center items-center mt-10 gap-5 flex">
-        <button className="border border-border rounded-lg px-10 py-2">Cancel</button>
-        <button onClick={handleDonateClick} className="bg-active_bg rounded-lg px-10 py-2">Next</button>
+        <button className="border border-border font-bold bg-active_bg rounded-3xl px-10 py-2">Cancel</button>
+        <button onClick={handleDonateClick} className="bg-mobile_color text-white rounded-3xl font-bold px-10 py-2">Next</button>
       </div>
+    </div>
+
     </div>
   );
 };
